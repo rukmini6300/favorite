@@ -37,7 +37,7 @@ function App() {
       messageTimer = setTimeout(() => {
         setMsgIndex((prev) => prev + 1);
         setCursorPos({
-          x: 100 + Math.random() * 300,
+          x: 100 + Math.random() * 150,
           y: 100 + Math.random() * 200,
         });
       }, MESSAGE_DELAY);
@@ -80,7 +80,7 @@ function App() {
           {/* Tooltip message */}
           <div
             className="tooltip-outside"
-            style={{ left: cursorPos.x + 20, top: cursorPos.y }}
+            style={{ left: cursorPos.x + 10, top: cursorPos.y }}
           >
             {messages[msgIndex]}
           </div>
